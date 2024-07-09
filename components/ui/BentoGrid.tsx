@@ -49,7 +49,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["ReactJS", "NextJS", "Typescript"];
-  const rightLists = [".Net", "Azure", "MSSQL"];
+  const rightLists = [".Net", "Storybook", "Git"];
 
   const [copied, setCopied] = useState(false);
 
@@ -127,7 +127,8 @@ console.log('CCCC',className)
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold`}
+            style={{zIndex:'100'}}
           >
             {title}
           </div>
